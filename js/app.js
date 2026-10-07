@@ -42,7 +42,7 @@ console.log(customerList);
 customerList.push("Kumara");
  console.log(customerList);
  
-
+//push
 const number = [];
 
 number.push(1);
@@ -53,6 +53,33 @@ number.push(5);
 console.log(number);
 number.reverse();
 console.log(number);
+
+//filter
+
+const ProductList = [
+    {name:"bun", inStock:"true",price:"100"},
+    {name:"milk", inStock:"true",price:"200"},
+    {name:"egg", inStock:"false",price:"300"},
+    {name:"bread", inStock:"true",price:"400"},
+    {name:"butter", inStock:"false",price:"500"},
+
+];
+
+console.log(ProductList);
+
+let inStockProduct = ProductList.filter(
+    function(product){
+        return productFilter(product);
+    }
+);
+
+function productFilter(product){
+    return product.inStock == true;
+
+}
+
+console.log(inStockProduct);
+
 
 
 
