@@ -103,6 +103,13 @@ let getTotal = (num1,num2) => {
 }
 console.log(getTotal(5,10));
 
+// -4 method - anonymous arrow function
+(num1,num2) => {
+    return num1 + num2;
+}
+
+
+
 
 
 
