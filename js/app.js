@@ -152,10 +152,25 @@ console.log(foundStudent);
 
 //JSON - javascript object notation
 
-fetch("/customer.json").then(res => res.json()).then(data => {
+fetch("https://jsonplaceholder.typicode.com/posts/").then(res => res.json()).then(data => {
     console.log(data);
-    
+
+   let tblItems = document.getElementById("tblItems");
+
+   let tblBody = "";
+
+   data.forEach(element => {
+    tblBody += `  <tr> 
+        <td>${element.id}</td>
+        <td>${element.title}</td>
+        <td>${element.body}</td>
+        <td>${element.userId}</td>
+        </tr>`;
+   });
+    tblItems.innerHTML = tblBody;
 });
+
+
 
 
 
