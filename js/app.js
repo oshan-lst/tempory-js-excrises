@@ -57,11 +57,11 @@ console.log(number);
 //filter
 
 const ProductList = [
-    {name:"bun", inStock:"true",price:"100"},
-    {name:"milk", inStock:"true",price:"200"},
-    {name:"egg", inStock:"false",price:"300"},
-    {name:"bread", inStock:"true",price:"400"},
-    {name:"butter", inStock:"false",price:"500"},
+    {name:"bun", inStock:true,price:"100"},
+    {name:"milk", inStock:true,price:"200"},
+    {name:"egg", inStock:false,price:"300"},
+    {name:"bread", inStock:true,price:"400"},
+    {name:"butter", inStock:false,price:"500"},
 
 ];
 
@@ -69,16 +69,41 @@ console.log(ProductList);
 
 // let inStockProducts = ProductList.filter(
 //     function(product){
-//         return product.inStock == "true";
+//         return product.inStock == true;
 //     }
 // );
 // console.log(inStockProducts);
 
 //3rd step
 
-let inStockProducts = ProductList.filter(product => product.inStock === "true");
+let inStockProducts = ProductList.filter(product => product.inStock == true);
 
 console.log(inStockProducts);
+
+//function add 
+
+// - 1 method
+
+function addNumber(num1, num2){
+    return num1 + num2;
+}
+console.log(addNumber(5,10));
+
+
+// - 2 method
+let getSum = function(num1 , num2){
+    return num1 + num2;
+}
+console.log(getSum(5,10));
+
+// -3 mothod arrow function
+
+let getTotal = (num1,num2) => {
+    return num1 + num2;
+}
+console.log(getTotal(5,10));
+
+
 
 
 
