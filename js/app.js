@@ -30,6 +30,21 @@ console.log("Hello JS");
 
 //arrys - const
 
+// let customerList = ["Samn","Nimal","Kamal"];
+// console.log(customerList);
+
+// customerList = "Kumara";
+// console.log(customerList);
+
+const customerList = ["Saman","Nimal","Kamal"];
+console.log(customerList);
+
+customerList.push("Kumara");
+ console.log(customerList);
+ 
+
+
+
 
 
 
