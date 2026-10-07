@@ -118,6 +118,26 @@ console.log(txtValue("Hello word"));
 let smaple = txtValue1 => txtValue1;
 console.log(smaple("Hello word 2 "));
 
+//sorting array of object
+
+const leterList = ["D","A","C","B","E","Z","L","I","O"];
+
+console.log(leterList);
+
+const sortArray = leterList.sort();
+console.log(sortArray);
+
+//map
+const salaryList = [5000,6000,7000,8000,9000];
+console.log(salaryList);
+
+// let doubleSalary = salaryList.map(salary => salary *2);
+// console.log(doubleSalary);
+
+console.log(salaryList.map(salary => salary * 2));
+
+
+
 
 
 
