@@ -150,6 +150,12 @@ const studentList = [
 let foundStudent = studentList.find(student => student.name === "Kamal");
 console.log(foundStudent);
 
+//JSON - javascript object notation
+
+fetch("/customer.json").then(res => res.json()).then(data => {
+    console.log(data);
+    
+});
 
 
 
