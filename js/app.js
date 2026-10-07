@@ -137,6 +137,19 @@ console.log(salaryList);
 console.log(salaryList.map(salary => salary * 2));
 
 
+// find -method
+
+const studentList = [
+    {name: "Saman", age: 20, gender: "male"},
+    {name: "Nimal", age: 25, gender: "male"},
+    {name: "Kamal", age: 30, gender: "male"},
+    {name: "Sunil", age: 35, gender: "male"},
+    {name: "Kumara", age: 40, gender: "male"},
+]
+
+let foundStudent = studentList.find(student => student.name === "Kamal");
+console.log(foundStudent);
+
 
 
 
