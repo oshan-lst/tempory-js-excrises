@@ -108,6 +108,18 @@ console.log(getTotal(5,10));
     return num1 + num2;
 }
 
+let txtValue = txtValue =>{
+    return txtValue;
+}
+
+console.log(txtValue("Hello word"));
+
+//arrow function with single parmeter - short hand
+let smaple = txtValue1 => txtValue1;
+console.log(smaple("Hello word 2 "));
+
+
+
 
 
 
