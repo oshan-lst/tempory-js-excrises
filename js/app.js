@@ -43,6 +43,19 @@ customerList.push("Kumara");
  console.log(customerList);
  
 
+const number = [];
+
+number.push(1);
+number.push(2);
+number.push(3);
+number.push(4);
+number.push(5);
+console.log(number);
+number.reverse();
+console.log(number);
+
+
+
 
 
 
