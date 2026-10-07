@@ -67,18 +67,18 @@ const ProductList = [
 
 console.log(ProductList);
 
-let inStockProducts = ProductList.filter(
-    function(product){
-        return product.inStock == "true";
-    }
-);
-console.log(inStockProducts);
+// let inStockProducts = ProductList.filter(
+//     function(product){
+//         return product.inStock == "true";
+//     }
+// );
+// console.log(inStockProducts);
 
 //3rd step
 
-// let inStockProducts = ProductList.(product => product.inStock == true);
+let inStockProducts = ProductList.filter(product => product.inStock === "true");
 
-// console.log(inStockProducts);
+console.log(inStockProducts);
 
 
 
